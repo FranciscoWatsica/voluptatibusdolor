@@ -1,0 +1,50 @@
+{
+  "name": "voluptatibusdolor",
+  "version": "1.0.0",
+  "description": "Tiny vanilla JS library to detect swipe direction.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "testWithCoverage": "jest --coverage",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FranciscoWatsica/voluptatibusdolor.git"
+  },
+  "keywords": [
+    "atque",
+    "touch",
+    "touchable",
+    "swipeable",
+    "drag and drop"
+  ],
+  "author": "EstevanWeissnat",
+  "maintainers": [
+    {
+      "name": "Max Marinich",
+      "email": "max.marinich@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/FranciscoWatsica/voluptatibusdolor.git",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/jest": "^24.0.18",
+    "jest": "24.9.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^2.9.2"
+  }
+}
